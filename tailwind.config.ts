@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        campus: {
+          primary: "hsl(var(--campus-primary))",
+          secondary: "hsl(var(--campus-secondary))",
+        },
+      },
+      backgroundImage: {
+        "campus-gradient": "var(--campus-gradient)",
+        "campus-gradient-subtle": "var(--campus-gradient-subtle)",
+      },
+      boxShadow: {
+        "campus": "var(--campus-shadow)",
+        "campus-glow": "var(--campus-glow)",
       },
       borderRadius: {
         lg: "var(--radius)",
