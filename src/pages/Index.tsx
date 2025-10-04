@@ -66,7 +66,7 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       {/* User Bar */}
-      <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white rounded-lg shadow-lg p-2">
+      <div className="absolute top-4 right-4 z-50 flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-2">
         <div className="flex items-center gap-2 px-3">
           <UserIcon className="h-4 w-4 text-campus-primary" />
           <span className="text-sm font-medium">{user?.email}</span>
