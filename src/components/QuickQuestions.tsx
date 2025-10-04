@@ -73,12 +73,18 @@ const QuickQuestions = () => {
   ];
 
   const handleQuestionClick = (question: string) => {
-    // This would integrate with the chat interface
-    console.log("Selected question:", question);
+    document.getElementById('chat')?.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      const input = document.querySelector('input[placeholder*="Ask me anything"]') as HTMLInputElement;
+      if (input) {
+        input.value = question;
+        input.focus();
+      }
+    }, 500);
   };
 
   return (
-    <section className="py-16 bg-campus-gradient-subtle">
+    <section id="questions" className="py-16 bg-campus-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-campus-primary mb-4">
